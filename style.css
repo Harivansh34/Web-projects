@@ -237,4 +237,82 @@ body {
 }
 
 
+@media (max-width:768px)
+{
+    .grid{
+        grid-template-columns: 1fr;
+        padding:0px;
+        
+    }
+
+    .gridA{
+       border-radius:0px;
+       font-size:17px;
+       font-weight: 400;
+       height:80vh;
+    }
+
+    .gridB{    
+        border-radius:0px;
+        font-size:17px;
+        font-weight: 400;
+        height:80vh;
+    }
+    .hero2 h1{
+        font-size:40px;
+    }
+
+    .hero{
+        background-image: url(appple3.jpg);
+        background-size: 200%;
+        background-position: center;
+}
+
+    .hero2{
+         background-image:url(applewatch.jpg);
+         background-position: center;
+         background-size: 200%;
+}
+
+}
+
+@media (max-width:768px)
+{
+    .grid{
+        grid-template-columns: 1fr;
+        padding:0px;
+        
+    }
+
+    .gridA{
+       border-radius:0px;
+       font-size:17px;
+       font-weight: 400;
+       height:80vh;
+    }
+
+    .gridB{    
+        border-radius:0px;
+        font-size:17px;
+        font-weight: 400;
+        height:80vh;
+    }
+    .hero2 h1{
+        font-size:40px;
+    }
+
+    .hero{
+        background-image: url(appple3.jpg);
+        background-size: 200%;
+        background-position: center;
+}
+
+    .hero2{
+         background-image:url(applewatch.jpg);
+         background-position: center;
+         background-size: 200%;
+}
+
+}
+
 
