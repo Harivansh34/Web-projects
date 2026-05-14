@@ -1,6 +1,8 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, "Helvetica Neue", Arial, sans-serif;
+               Roboto, "Helvetica Neue", Arial, sans-serif; 
+               
+               
 }
 .header{
     display:flex;
@@ -18,9 +20,13 @@ body {
 
 }
 .logo{
-    display:flex;
-    font-size: 20px;
-    font-weight: 600;
+    width:40px;
+    transition: 0.3s ease;
+    color:black;
+    cursor:pointer;
+}
+.logo:hover {
+    color: rgba(21, 21, 21, 0.768);
 }
 
 .links-centre{
@@ -54,12 +60,15 @@ body {
     min-height:80vh;
     display:flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap:20px;
     background-color: #f5f5f7;
-    padding:80px 20px;
+    padding:60px 20px 0px;
     cursor:pointer;
+    background-image: url(appple3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
 }
 
 .hero button.a{
@@ -103,16 +112,20 @@ body {
     display:flex;
     height:80vh;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #f5f5f7;
     margin-top:20px;
     gap:20px;
     padding:80px 20px;
     cursor:pointer;
+    background-image: url(applewatch.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .hero2 h1{
+    display:flex;
     font-size:56px;
     font-weight: 600;
     letter-spacing: -0.5px;
@@ -163,7 +176,6 @@ body {
     border-radius: 20px;
     display:flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     padding:40px;
@@ -171,6 +183,7 @@ body {
     background-image: url("apple1.jpg");
     background-size:cover;
     background-position: center;
+    cursor:pointer;
 }
 .gridA button{
     border:1px solid rgb(42, 131, 232);
@@ -186,14 +199,13 @@ body {
     border-radius:20px;
     display:flex;
     flex-direction:column;
-    justify-content: center;
     align-items: center;
     padding:40px;
     background: linear-gradient(to left, #00ff99, #ff0066);
     background-image:url("apple2.jpg");
     background-position:center;
     background-size: cover;
-
+    cursor:pointer;
 }
 
 .Two-button{
@@ -217,5 +229,58 @@ body {
     padding:8px 20px;
 }
 
+.left button{
+    cursor:pointer;
+}
+.right button{
+    cursor:pointer;
+}
+
+.Two-button button.B:hover{
+    color:white;
+    background-color:rgb(42, 131, 232) ;
+}
+
+@media (max-width:768px)
+{
+    .grid{
+        grid-template-columns: 1fr;
+        padding:0px;
+        
+    }
+
+    .gridA{
+       border-radius:0px;
+       font-size:17px;
+       font-weight: 400;
+       height:80vh;
+    }
+
+    .gridB{    
+        border-radius:0px;
+        font-size:17px;
+        font-weight: 400;
+        height:80vh;
+    }
+    .hero2 h1{
+        font-size:40px;
+    }
+
+    .hero{
+        background-image: url(appple3.jpg);
+        background-size: 200%;
+        background-position: center;
+}
+
+    .hero2{
+         background-image:url(applewatch.jpg);
+         background-position: center;
+         background-size: 200%;
+}
+
+}
 
 
+
+
+   
